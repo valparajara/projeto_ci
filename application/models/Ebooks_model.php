@@ -21,14 +21,14 @@
 
  		}
 
- 		// function total_sales_value(){
- 		// 	$this->db->select('ebooks.*,sales.*');
-	  //   $this->db->from('ebooks');
-	  //   $this->db->where('ebooks.id = sales.ebook_id');
-	  //   $this->db->sum('ebooks.price');
+ 		function total_sales_value(){
+ 			$this->db->select('ebooks.*,sales.*');
+	    $this->db->from('ebooks');
+	    $this->db->where('ebooks.id = sales.ebook_id');
+	    $this->db->sum('ebooks.price');
  			
- 		// 	$query_value_total = $this->db->get();
+ 			$query_value_total = $this->db->get();
 	    
-	  //   return $query_value_total->result();
- 		// }
+	    return $query_value_total->result();
+ 		}
 }

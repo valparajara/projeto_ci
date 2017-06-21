@@ -21,7 +21,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<th>Valor Total</th>
 				</tr>
 			</thead>
-				<?php print_r($query); exit(); ?>
 			<?php foreach ($query as $row):  ?>
 			<tbody>
 				<tr>
