@@ -22,7 +22,7 @@ INSERT INTO ebooks VALUES(1, 'Destruindo a estrela da morte', '19.90' , 3);
 INSERT INTO ebooks VALUES(2, 'Criando a estrela da morte', '29.90', 1);
 INSERT INTO ebooks VALUES(3, 'Como destruir o império', '9.90', 3);
 INSERT INTO ebooks VALUES(4, 'Eu sou seu pai, convida com isso!', '29.90', 1);
-INSERT INTO ebooks VALUES(5, 'Vida e morte de um ponei feliz', '1.00' 2);
+INSERT INTO ebooks VALUES(5, 'Vida e morte de um ponei feliz', '1.00', 2);
 
 INSERT INTO sales VALUES(1, 1);
 INSERT INTO sales VALUES(2, 1);

@@ -20,8 +20,8 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('ebooks');
-    $data['query'] = $this->ebooks->result_getall();
+		$this->load->model('ebooks_model');
+    $data['query'] = $this->ebooks_model->result_getall();
 
 		$this->load->view('home', $data);
 	}
