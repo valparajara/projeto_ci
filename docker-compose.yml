@@ -1,0 +1,19 @@
+version: '2'
+services:
+    php:
+      image: php:5.6-apache
+      volumes:
+        - ./:/var/www/html
+      links:
+        - mysql
+      ports:
+        - "80:80"
+    mysql:
+      image: mysql:5.7
+      ports:
+        - "3306:3306"
+      environment:
+        MYSQL_ROOT_PASSWORD: abc123
+        MYSQL_DATABASE: projetoci
+        MYSQL_USER: projetoci
+        MYSQL_PASSWORD: abc123
