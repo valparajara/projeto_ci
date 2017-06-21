@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS authors (
 
 CREATE TABLE IF NOT EXISTS ebooks (
   id  INT (11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
- 	title varchar(255) DEFAULT NULL,
+  title varchar(255) DEFAULT NULL,
   price  float(10) DEFAULT NULL,
   author_id INT(11) NOT NULL
 );

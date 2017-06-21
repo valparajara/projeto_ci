@@ -1,6 +1,6 @@
 <?php
 
-class Sales extends PROJETOCI_Model {
+class Sales extends CI_Model {
     
   function __construct() {
       parent::__construct();

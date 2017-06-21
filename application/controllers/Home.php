@@ -20,19 +20,9 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->model("authors");
-		// $authors = $this->authors_model->return_authors();
-		
-		$this->load->view('home');
+		$this->load->model('ebooks');
+    $data['query'] = $this->ebooks->result_getall();
+
+		$this->load->view('home', $data);
 	}
-
-	function getall(){
-
-        $this->load->model('ebooks');
-        $data['query'] = $this->ebooks->result_getall();
-       print_r($data['query']);
-       die();
-        $this->load->view('home', $data);
-
-        }
 }
