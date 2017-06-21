@@ -25,10 +25,11 @@
  			$this->db->select('ebooks.*,sales.*');
 	    $this->db->from('ebooks');
 	    $this->db->where('ebooks.id = sales.ebook_id');
-	    $this->db->sum('ebooks.price');
+	    $this->db->select_sum('ebooks.price');
  			
  			$query_value_total = $this->db->get();
 	    
 	    return $query_value_total->result();
  		}
 }
+

@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<td></td>
 					<td><?php echo $row->name;?><br></td>
 					<td><?php echo $row->title;?><br></td>
-					<td><?php echo $row->prince;?></td>
+					<td><?php #echo $row->prince;?>0</td>
 				</tr>
       <?php endforeach; ?>
 
